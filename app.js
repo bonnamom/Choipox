@@ -10,13 +10,11 @@ let app = {
     init: function () {
         let button = document.querySelector(".submit")
         button.addEventListener("click", app.handleform)
-
     },
 
     nameCheck: function () {
         let name = document.querySelector(".name");
         name = name.value.toUpperCase();
-        console.log(name);
 
         if (!isNaN(name) == true) {
             let speech = document.querySelector(".speech");
@@ -37,7 +35,6 @@ let app = {
             app.house = app.houses[1];
             app.showHouse();
         }
-        console.log(app.house);
     },
 
     showHouse: function () {
